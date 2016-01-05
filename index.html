@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jquery.email-tokeninput by olde86</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jquery.email-tokeninput</h1>
+      <h2 class="project-tagline">A jQuery plugin to create a cusom input field to enter multiple valid emails</h2>
+      <a href="https://github.com/olde86/jquery.email-tokeninput" class="btn">View on GitHub</a>
+      <a href="https://github.com/olde86/jquery.email-tokeninput/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/olde86/jquery.email-tokeninput/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="why-i-built-this-plugin" class="anchor" href="#why-i-built-this-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why I built this plugin</h3>
+
+<p>I was building a laravel sass application where an account creator needed to be able to invite his/her team members by easily adding email addresses in a auto-expanding tokeninput field. I didn't feel like other solutions fit my use case, so I built this plugin.</p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>This plugin relies on <a href="https://github.com/MartinF/jQuery.Autosize.Input">jquery.autosize.input</a> made by <a href="https://github.com/MartinF">Github user Martin F</a> so remember to include this (it's included in this repository).</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Download the zip and get the files from the <code>dist</code> folder</p>
+
+<p>or use bower</p>
+
+<div class="highlight highlight-source-js"><pre>bower install jquery<span class="pl-k">-</span>email<span class="pl-k">-</span>tokeninput</pre></div>
+
+<p>Optionally you can use bower-installer to place the files correctly, just run <code>bower-installer</code></p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Include <code>autosize</code> and <code>email-tokeninput</code> and the CSS file in your HTML</p>
+
+<pre lang="hmtl"><code>&lt;script src="jquery.autosize.min.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="jquery.email-tokeninput.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="email-tokeninput.css" charset="utf-8"&gt;
+</code></pre>
+
+<p>Add an empty <code>div</code> with a class to your HTML  </p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mailtoken<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Call mailtoken on the empty div</p>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1">&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;</span>
+<span class="pl-s1">    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>.mailtoken<span class="pl-pds">'</span></span>).<span class="pl-en">mailToken</span>();</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<h3>
+<a id="what-gets-sent-to-the-server" class="anchor" href="#what-gets-sent-to-the-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>What gets sent to the server</h3>
+
+<p>Getting the value in (php)</p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-smi">$emails</span> <span class="pl-k">=</span> <span class="pl-c1">json_decode</span>(<span class="pl-smi">$_POST</span>[<span class="pl-s"><span class="pl-pds">'</span>emailtoken<span class="pl-pds">'</span></span>]);</span></pre></div>
+
+<p>This is the format the server receives</p>
+
+<div class="highlight highlight-source-js"><pre>[
+    { <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>user1@faker.com<span class="pl-pds">"</span></span> },
+    { <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>user2@faker.com<span class="pl-pds">"</span></span> },
+    { <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>user3@faker.com<span class="pl-pds">"</span></span> }
+]</pre></div>
+
+<h3>
+<a id="known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known issues</h3>
+
+<ul>
+<li>Plugin breaks if more than one instance of emailtoken on the page</li>
+</ul>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with this package? or found a bug? create a <a href="https://github.com/olde86/jquery.email-tokeninput/issues/new">new issue</a> on Github or <a href="http://www.oldenborg.nu">contact me</a> through my website and I’ll help you sort it out.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/olde86/jquery.email-tokeninput">Jquery.email-tokeninput</a> is maintained by <a href="https://github.com/olde86">olde86</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

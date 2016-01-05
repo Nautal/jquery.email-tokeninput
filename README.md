@@ -1,3 +1,5 @@
+[Live demo on JSFiddle](https://jsfiddle.net/1hsz9bnj/4/)
+
 ### Why I built this plugin
 I was building a laravel sass application where an account creator needed to be able to invite his/her team members by easily adding email addresses in a auto-expanding tokeninput field. I didn't feel like other solutions fit my use case, so I built this plugin.
 

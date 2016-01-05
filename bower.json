@@ -1,8 +1,8 @@
 {
-  "name": "jquery.email-tokeninput",
+  "name": "jquery-email-tokeninput",
   "homepage": "https://github.com/olde86/jquery.email-tokeninput",
   "authors": [
-    "Henrik Oldenborg <mail@zonix.dk>"
+    "Henrik Oldenborg (http://www.oldenborg.nu)"
   ],
   "description": "A jquery plugin for creating a custom input field for adding multiple email addresses",
   "main": "dist/js/jquery.email-tokeninput.min.js",

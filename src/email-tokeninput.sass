@@ -1,0 +1,47 @@
+.mt-container
+    font-size: 30px
+    border: 1px solid #CCC
+    box-sizing: content-box
+    cursor: text
+    min-height: 40px
+    padding: 10px
+    textarea
+        display: none
+    input
+        border: 0
+        @extend .mt-token
+        width: 20px
+    .mt-ul
+        box-sizing: border-box
+        float: left
+        padding: 0
+        margin: 0
+        list-style: none
+        .mt-token
+            margin-right: 20px
+            &.mt-selected
+                background: blue
+
+.mt-token
+    box-sizing: border-box
+    float: left
+    font-size: 20px
+    line-height: 40px
+    background: lightblue
+    border: 1px solid #3498db
+    display: block
+    height: 40px
+    padding: 0 10px
+    border-radius: 6px
+    &.mt-error
+        background: red
+
+// Remove anoying outer glows and "antpaths"
+a:focus,
+select:focus,
+input:focus
+    outline: medium none !important
+
+button::-moz-focus-inner,
+select::-moz-focus-inner
+    border: 0 none !important

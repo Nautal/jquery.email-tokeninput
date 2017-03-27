@@ -141,8 +141,8 @@
      */
     function documentKeydown(e)
     {
-        // Enter
-        if(e.keyCode == 13)
+        // Enter or space bar or comma
+        if(e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 188)
         {
             documentKeydownEnter(e);
         }
@@ -193,8 +193,8 @@
      */
     function inputKeydown(e)
     {
-        // Pressing enter while focused on input
-        if(e.keyCode == 13)
+        // Pressing enter or space bar or comma while focused on input
+        if(e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 188)
         {
             inputKeydownEnter();
         }

@@ -14,7 +14,7 @@ Download the zip and get the files from the `dist` folder
 
 or use bower
 ```javascript
-bower install jquery-email-tokeninput_alt
+bower install jquery-email-tokeninput-alt
 ```
 Optionally you can use bower-installer to place the files correctly, just run `bower-installer`
 

@@ -1,10 +1,11 @@
 {
-  "name": "jquery-email-tokeninput",
-  "homepage": "https://github.com/olde86/jquery.email-tokeninput",
+  "name": "jquery-email-tokeninput_alt",
+  "homepage": "https://github.com/juandiegoles/jquery.email-tokeninput",
   "authors": [
-    "Henrik Oldenborg (http://www.oldenborg.nu)"
+    "Henrik Oldenborg (http://www.oldenborg.nu)",
+    "Juandiegoles (@juandiegoles)"
   ],
-  "description": "A jquery plugin for creating a custom input field for adding multiple email addresses",
+  "description": "A bit improve of the awesome plugin by Henrik Oldenborg, now you can separate the emails with commas or space bar key",
   "main": "dist/js/jquery.email-tokeninput.min.js",
   "moduleType": [],
   "keywords": [

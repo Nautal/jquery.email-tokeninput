@@ -12,8 +12,8 @@
     };
 
     /**
-	 * Initialize the email token input
-	 */
+     * Initialize the email token input
+     */
     function init(e)
     {
         component = $(e);
@@ -270,7 +270,7 @@
     {
         var arr = [];
         list.children('li').each(function () {
-            arr.push( { email : $(this).html() } );
+            arr.push( $(this).html() );
         });
         return arr;
     }

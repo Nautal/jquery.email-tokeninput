@@ -1,0 +1,38 @@
+{
+  "name": "jquery.email-tokeninput",
+  "homepage": "https://github.com/olde86/jquery.email-tokeninput",
+  "authors": [
+    "Henrik Oldenborg <mail@zonix.dk>"
+  ],
+  "description": "A jquery plugin for creating a custom input field for adding multiple email addresses",
+  "main": "dist/js/jquery.email-tokeninput.min.js",
+  "moduleType": [],
+  "keywords": [
+    "jquery",
+    "email",
+    "input",
+    "token",
+    "email-token",
+    "email-tokeninput",
+    "team invitation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "1d94391dadb455dccee9643217ac4ef78fa010d9"
+  },
+  "_source": "https://github.com/juandiegoles/jquery.email-tokeninput.git",
+  "_target": "^1.0.0",
+  "_originalSource": "jquery-email-tokeninput_alt",
+  "_direct": true
+}

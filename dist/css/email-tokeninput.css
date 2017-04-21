@@ -35,6 +35,24 @@
   width: initial; }
   .mt-token.mt-error, .mt-container input.mt-error {
     background: red; }
+.mailtoken {
+  border-radius: 4px;
+}
+.mt-token {
+    background: #d5e0b1;
+    border: 1px solid #afd33d;
+}
+.mt-token-erase {
+    background: #333;
+    border-radius: 3px;
+    color: #ffffff;
+    line-height: 0;
+    padding: 0 3px 0 3px;
+}
+.mt-token-erase:hover {
+    background: #DE0000;
+    cursor: pointer;
+}
 
 a:focus,
 select:focus,

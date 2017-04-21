@@ -62,7 +62,7 @@
 
         var element = $('<li/>',{
             'class': 'mt-token',
-            html: input.val()
+            html: input.val() + ' <span class="mt-token-erase">×</span>',
         });
         list.append(element);
         clearInput();
@@ -102,7 +102,6 @@
         var element = $('<input/>', {
             'style' : 'display:none;',
             'name': settings.name + '-input',
-            'data-autosize-input': '{ "space" : 0}',
             blur: function() {
                 hideIfUndefined($(this));
             }
@@ -121,6 +120,17 @@
             e.hide();
         }
     }
+
+      /**
+       * Erase thi
+       */
+      function hideIfUndefined(e)
+      {
+          if(e.val() == '' || e.val == undefined)
+          {
+              e.hide();
+          }
+      }
 
     /**
      * Register handlers for clicks and keyboard input
@@ -145,15 +155,6 @@
         if(e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 188)
         {
             documentKeydownEnter(e);
-        }
-        // Backspace
-        if(e.keyCode == 8)
-        {
-            if( ! input.is(':visible') )
-            {
-                list.children('li:last').addClass('mt-selected');
-                $('.mt-selected').remove();
-            }
         }
         // Escape
         if(e.keyCode == 27)
@@ -281,4 +282,7 @@
     });
 
   };
+    $(document).on('click','.mt-token-erase', function() {
+        $(this).parent().remove();
+    });
 })(jQuery);

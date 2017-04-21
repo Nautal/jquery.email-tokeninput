@@ -1,12 +1,12 @@
 {
   "name": "jquery-email-tokeninput-alt",
-  "version": "0.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/juandiegoles/jquery.email-tokeninput",
   "authors": [
     "Henrik Oldenborg (http://www.oldenborg.nu)",
     "Juandiegoles (@juandiegoles)"
   ],
-  "description": "I've changed the plugin by Henrik Oldenborg (it is awesome plugin), but if you are interested in: - not using autosize plugin, - separating the emails with commas and spacebar, - and getting a clean response of the json with the emails, this might be usefull",
+  "description": "I've changed the plugin by Henrik Oldenborg (it is awesome plugin) but i needed other stuff ^_^",
   "main": "dist/js/jquery.email-tokeninput.min.js",
   "moduleType": [],
   "keywords": [

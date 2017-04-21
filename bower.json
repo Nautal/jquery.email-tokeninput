@@ -6,7 +6,7 @@
     "Henrik Oldenborg (http://www.oldenborg.nu)",
     "Juandiegoles (@juandiegoles)"
   ],
-  "description": "I've changed the plugin by Henrik Oldenborg (it is awesome plugin), but if you are interested im not using autosize plugin and also separating the emails with commas and spacebar this might be usefull",
+  "description": "I've changed the plugin by Henrik Oldenborg (it is awesome plugin), but if you are interested in: - not using autosize plugin, - separating the emails with commas and spacebar, - and getting a clean response of the json with the emails, this might be usefull",
   "main": "dist/js/jquery.email-tokeninput.min.js",
   "moduleType": [],
   "keywords": [

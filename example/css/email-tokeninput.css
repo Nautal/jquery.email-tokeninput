@@ -31,7 +31,8 @@
   display: block;
   height: 40px;
   padding: 0 10px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  width: initial; }
   .mt-token.mt-error, .mt-container input.mt-error {
     background: red; }
 

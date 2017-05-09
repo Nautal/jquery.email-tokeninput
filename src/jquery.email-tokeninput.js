@@ -271,7 +271,7 @@
     {
         var arr = [];
         list.children('li').each(function () {
-            arr.push( $(this).html() );
+            arr.push( $(this).html().split(" ")[0] );
         });
         return arr;
     }

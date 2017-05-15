@@ -2,8 +2,12 @@
 I was building a laravel sass application where an account creator needed to be able to invite his/her team members by easily adding email addresses in a auto-expanding tokeninput field. I didn't feel like other solutions fit my use case, so I built this plugin.
 
 ### Why @juandiegoles modify it
-This plugin is awesome but i need to separeate emails not only using the enter key, it also needs to separate the emails with the space bar or the comma
-Aso, no more autosize ^_^
+This plugin is awesome but i need to separeate emails not only using the enter key (Now it process on change)
+
+Also: 
+- Add a button to erase the recorded emails
+- No more autosize 
+- The array with the mails contains only the emails
 
 ### Installation
 Download the zip and get the files from the `dist` folder

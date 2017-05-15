@@ -141,6 +141,10 @@
         component.click(function(){
             list.children('li').removeClass('mt-selected');
         });
+        input.on('change',inputOnchange);
+        $(document).on('click','.mt-token-erase', function() {
+            $(this).parent().remove();
+        });
         input.on('keydown',inputKeydown);
         document.getElementById('mailtoken').addEventListener("keydown", documentKeydown);  //or however you are calling your method
 
@@ -223,6 +227,21 @@
     }
 
     /**
+    * Do everything on change also to validate if user send form for example
+    */
+    function inputOnchange()
+    {
+      if(checkRegex())
+      {
+          inputClearError();
+          addTokenToList();
+          updateTextarea();
+          return;
+      }
+      inputError();
+    }
+
+    /**
      * Be a good developer!
      */
     function inputError()
@@ -282,7 +301,4 @@
     });
 
   };
-    $(document).on('click','.mt-token-erase', function() {
-        $(this).parent().remove();
-    });
 })(jQuery);

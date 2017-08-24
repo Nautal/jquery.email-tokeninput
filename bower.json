@@ -1,10 +1,11 @@
 {
   "name": "jquery-email-tokeninput-alt",
-  "version": "1.0.6",
-  "homepage": "https://github.com/juandiegoles/jquery.email-tokeninput",
+  "version": "1.0.7",
+  "homepage": "https://github.com/Nautal/jquery.email-tokeninput",
   "authors": [
     "Henrik Oldenborg (http://www.oldenborg.nu)",
-    "Juandiegoles (@juandiegoles)"
+    "Juandiegoles (@juandiegoles)",
+    "Nautal (@NautalEng)"
   ],
   "description": "I've changed the plugin by Henrik Oldenborg (it is awesome plugin) but i needed other stuff ^_^",
   "main": "dist/js/jquery.email-tokeninput.min.js",
